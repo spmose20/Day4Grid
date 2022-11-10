@@ -1,0 +1,32 @@
+.grid-container {
+  display:grid;
+  grid-template-areas: "header header header header header"
+  "menu menu main main main"
+  "menu  menu footer footer footer";
+  grid-gap: 10px;
+}
+
+header {
+  grid-area: header;
+  background-color: lightblue;
+  text-align: center;
+  height: 1fr;
+}
+nav {
+  grid-area: menu;
+  background-color: lightgreen;
+  text-align: center;
+  height: 1fr;
+}
+main {
+  grid-area: main;
+  background-color: lightpink;
+  text-align: center;
+  height: 1fr;
+}
+footer {
+  grid-area: footer;
+  background-color: lightblue;
+  text-align: center;
+  height: 1fr;  
+}
